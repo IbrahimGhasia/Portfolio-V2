@@ -22,7 +22,7 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
 					<h1 className="text-4xl text-white tracking-tighter font-thin">
 						{myInfo.name}
 					</h1>
-					<p className="text-gray-400 text-xl font-light">
+					<p className="text-[#6b6b6b] text-xl font-light leading-6">
 						{myInfo.description}
 					</p>
 				</div>
@@ -39,9 +39,7 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
 								height={16}
 								className=""
 							/>
-							<p
-								className={`text-gray-400 ${social.color} text-sm`}
-							>
+							<p className={`${social.color} text-sm`}>
 								{social.name}
 							</p>
 						</div>
