@@ -16,9 +16,9 @@ interface HeroSectionProps {}
 const HeroSection: FC<HeroSectionProps> = ({}) => {
 	return (
 		<div className="flex flex-col md:flex-row md:items-center gap-x-6">
-			<div>
-				<Avatar className="w-16 h-16 md:w-32 md:h-32">
-					<AvatarImage src="/Myself-2.jpeg" alt="@shadcn" />
+			<div className="">
+				<Avatar className="w-24 h-24 md:w-32 md:h-32 hover:-translate-y-2 duration-300">
+					<AvatarImage src="/doodle.jpeg" alt="@shadcn" />
 					<AvatarFallback>IG</AvatarFallback>
 				</Avatar>
 			</div>
@@ -33,10 +33,10 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
 							/>
 						</Link>
 					</div>
-					<div className="text-[#6b6b6b] text-lg font-light leading-6">
+					<div className="text-gray-400 text-lg font-light leading-6">
 						{myInfo.description}
 					</div>
-					<div className="text-md text-[#6b6b6b] hover:underline">
+					<div className="text-sm text-gray-400 font-light hover:underline">
 						{myInfo.email}
 					</div>
 				</div>

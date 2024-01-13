@@ -24,12 +24,6 @@ export const myInfo = {
 			link: "https://leetcode.com/user4875v/",
 		},
 		{
-			name: "Instagram",
-			icon: "/icons/instagram.svg",
-			color: "text-[#e1306c]",
-			link: "https://www.instagram.com/ibrahim.ghasia/",
-		},
-		{
 			name: "Twitter",
 			icon: "/icons/twitter.svg",
 			color: "text-[#1da1f2]",

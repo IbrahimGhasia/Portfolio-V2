@@ -39,7 +39,7 @@ const ProjectSection: FC<ProjectSectionProps> = ({}) => {
 							{pro.tools.map((skill, index) => (
 								<div
 									key={index}
-									className="hover:text-white cursor-pointer"
+									className="text-gray-400 cursor-pointer"
 								>
 									• {skill}
 								</div>
