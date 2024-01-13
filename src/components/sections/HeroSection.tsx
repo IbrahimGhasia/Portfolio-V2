@@ -9,6 +9,7 @@ import {
 	TooltipProvider,
 	TooltipTrigger,
 } from "../ui/tooltip";
+import Link from "next/link";
 
 interface HeroSectionProps {}
 
@@ -25,21 +26,12 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
 				<div className="">
 					<div className="text-3xl md:text-4xl text-white tracking-tighter font-thin flex items-baseline gap-2">
 						<div>{myInfo.name}</div>
-						<TooltipProvider>
-							<Tooltip>
-								<TooltipTrigger asChild>
-									<File
-										color="rgb(59 130 246)"
-										className="cursor-pointer"
-									/>
-								</TooltipTrigger>
-								<TooltipContent sideOffset={10} side="top">
-									<p className="text-black font-normal tracking-normal text-xs">
-										Download Resume
-									</p>
-								</TooltipContent>
-							</Tooltip>
-						</TooltipProvider>
+						<Link href={myInfo.resume} target="_blank">
+							<File
+								color="rgb(59 130 246)"
+								className="cursor-pointer"
+							/>
+						</Link>
 					</div>
 					<div className="text-[#6b6b6b] text-lg font-light leading-6">
 						{myInfo.description}
@@ -50,21 +42,20 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
 				</div>
 				<div className="flex flex-wrap mr-5 items-center gap-3 mt-2">
 					{myInfo.socials.map((social, key) => (
-						<div
-							key={key}
-							className="flex items-center gap-1 group cursor-pointer"
-						>
-							<Image
-								src={social.icon}
-								alt={social.name}
-								width={16}
-								height={16}
-								className=""
-							/>
-							<p className={`${social.color} text-sm`}>
-								{social.name}
-							</p>
-						</div>
+						<Link href={social.link} key={key} target="_blank">
+							<div className="flex items-center gap-1 group cursor-pointer">
+								<Image
+									src={social.icon}
+									alt={social.name}
+									width={16}
+									height={16}
+									className=""
+								/>
+								<p className={`${social.color} text-sm`}>
+									{social.name}
+								</p>
+							</div>
+						</Link>
 					))}
 				</div>
 			</div>

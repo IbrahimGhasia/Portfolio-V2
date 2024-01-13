@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import AboutSection from "@/components/sections/AboutSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
@@ -11,6 +12,7 @@ export default function Home() {
 			<AboutSection />
 			<ExperienceSection />
 			<ProjectSection />
+			<Footer />
 		</MaxWidthWrapper>
 	);
 }
