@@ -14,17 +14,17 @@ interface HeroSectionProps {}
 
 const HeroSection: FC<HeroSectionProps> = ({}) => {
 	return (
-		<div className="mt-10 md:mt-20 flex flex-col md:flex-row md:items-center gap-x-6">
+		<div className="flex flex-col md:flex-row md:items-center gap-x-6">
 			<div>
-				<Avatar className="w-16 h-16 md:w-28 md:h-28">
+				<Avatar className="w-16 h-16 md:w-32 md:h-32">
 					<AvatarImage src="/Myself-2.jpeg" alt="@shadcn" />
 					<AvatarFallback>IG</AvatarFallback>
 				</Avatar>
 			</div>
 			<div className="my-4">
 				<div className="">
-					<div className="text-4xl text-white tracking-tighter font-thin flex items-baseline gap-2">
-						{myInfo.name}{" "}
+					<div className="text-3xl md:text-4xl text-white tracking-tighter font-thin flex items-baseline gap-2">
+						<div>{myInfo.name}</div>
 						<TooltipProvider>
 							<Tooltip>
 								<TooltipTrigger asChild>
@@ -41,8 +41,11 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
 							</Tooltip>
 						</TooltipProvider>
 					</div>
-					<div className="text-[#6b6b6b] text-xl font-light leading-6">
+					<div className="text-[#6b6b6b] text-lg font-light leading-6">
 						{myInfo.description}
+					</div>
+					<div className="text-md text-[#6b6b6b] hover:underline">
+						{myInfo.email}
 					</div>
 				</div>
 				<div className="flex flex-wrap mr-5 items-center gap-3 mt-2">

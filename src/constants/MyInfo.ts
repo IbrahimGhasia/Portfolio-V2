@@ -2,6 +2,7 @@ export const myInfo = {
 	name: "Ibrahim Ghasia",
 	description: "Product-focused FullStack Developer",
 	about: "GM, I'm Ibrahim. I enjoy building dynamic, creative products from start to finish. Focused on developing intuitive experiences that constantly grow and improve based on user metrics. Always shipping.",
+	email: "ibrahim.ghasia@gmail.com",
 	socials: [
 		{
 			name: "LinkedIn",

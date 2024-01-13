@@ -26,9 +26,14 @@ const ExperienceSection: FC = () => {
 								{exp.description}
 							</div>
 
-							<div className="flex flex-wrap gap-x-3 text-white text-sm mt-3">
+							<div className="flex flex-wrap gap-x-3 text-[#6b6b6b] text-sm mt-3">
 								{exp.skils.map((skill, index) => (
-									<div key={index}>• {skill}</div>
+									<div
+										key={index}
+										className="hover:text-white cursor-pointer"
+									>
+										• {skill}
+									</div>
 								))}
 							</div>
 						</div>
