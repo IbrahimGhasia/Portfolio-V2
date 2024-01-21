@@ -14,7 +14,7 @@ export const myInfo = {
 		{
 			name: "GitHub",
 			icon: "/icons/github.svg",
-			color: "text-[#f5f5f5]",
+			color: "text-[#6B7280]",
 			link: "https://github.com/IbrahimGhasia",
 		},
 		{

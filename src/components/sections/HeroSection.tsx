@@ -23,8 +23,8 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
 				</Avatar>
 			</div>
 			<div className="my-4">
-				<div className="">
-					<div className="text-3xl md:text-4xl text-white tracking-tighter font-thin flex items-baseline gap-2">
+				<div>
+					<div className="text-3xl md:text-4xl text-black dark:text-white tracking-tighter font-medium dark:font-thin flex items-baseline gap-2">
 						<div>{myInfo.name}</div>
 						<Link href={myInfo.resume} target="_blank">
 							<File
@@ -33,10 +33,10 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
 							/>
 						</Link>
 					</div>
-					<div className="text-gray-400 text-lg font-light leading-6">
+					<div className="text-gray-900 dark:text-gray-400 text-lg font-light leading-6">
 						{myInfo.description}
 					</div>
-					<div className="text-sm text-gray-400 font-light hover:underline">
+					<div className="text-sm text-gray-700 dark:text-gray-400 font-light hover:underline">
 						{myInfo.email}
 					</div>
 				</div>

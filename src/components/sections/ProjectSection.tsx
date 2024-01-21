@@ -13,7 +13,7 @@ const ProjectSection: FC<ProjectSectionProps> = ({}) => {
 			<div className="space-y-10">
 				{project.map((pro, index) => (
 					<div key={index}>
-						<div className="text-white font-extralight text-lg">
+						<div className="text-gray-900 dark:text-white font-medium dark:font-extralight text-lg">
 							<div className="flex gap-2 items-center">
 								{pro.title}
 								{pro.sourceCode && (
@@ -35,14 +35,14 @@ const ProjectSection: FC<ProjectSectionProps> = ({}) => {
 							{pro.description}
 						</div>
 
-						<div className="flex flex-wrap gap-3 text-[#6b6b6b] text-sm mt-3">
+						<div className="flex flex-wrap gap-3 text-sm mt-3">
 							{pro.tools.map((skill, index) => (
 								<div
 									key={index}
-									className="text-gray-400 cursor-pointer"
+									className="text-gray-700 dark:text-gray-400 cursor-pointer"
 								>
 									•{" "}
-									<span className="hover:underline hover:underline-offset-4 hover:text-white">
+									<span className="hover:underline hover:underline-offset-4 hover:text-black dark:hover:text-white">
 										{skill}
 									</span>
 								</div>

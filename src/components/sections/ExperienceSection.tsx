@@ -18,7 +18,7 @@ const ExperienceSection: FC = () => {
 							<Link
 								href={exp.link}
 								target="_blank"
-								className="hover:underline text-white font-extralight text-lg flex items-center"
+								className="hover:underline text-gray-900 dark:text-white dark:font-extralight text-lg flex items-center"
 							>
 								{exp.title} <ArrowUpRight className="w-5" />
 							</Link>
@@ -26,14 +26,14 @@ const ExperienceSection: FC = () => {
 								{exp.description}
 							</div>
 
-							<div className="flex flex-wrap gap-x-3 text-[#6b6b6b] text-sm mt-3">
+							<div className="flex flex-wrap gap-x-3 text-sm mt-3">
 								{exp.skils.map((skill, index) => (
 									<div
 										key={index}
-										className="text-gray-400 cursor-pointer"
+										className="text-gray-700 dark:text-gray-400 cursor-pointer"
 									>
 										•{" "}
-										<span className="hover:underline hover:underline-offset-4 hover:text-white">
+										<span className="hover:underline hover:underline-offset-4 hover:text-black dark:hover:text-white">
 											{skill}
 										</span>
 									</div>

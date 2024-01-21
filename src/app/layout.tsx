@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/react";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,8 +22,15 @@ export default function RootLayout({
 			<head>
 				<link rel="icon" href="/img/favicon.ico" sizes="any" />
 			</head>
-			<body className={cn("bg-black", inter.className)}>
-				{children}
+			<body className={cn("bg-white dark:bg-black", inter.className)}>
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="class"
+					enableSystem
+					disableTransitionOnChange
+				>
+					{children}
+				</ThemeProvider>
 				<Analytics />
 			</body>
 		</html>
