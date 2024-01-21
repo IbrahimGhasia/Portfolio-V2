@@ -4,9 +4,9 @@ export const experience = [
 		endDate: "present",
 		title: "Full-Stack Developer Intern - KeyToZ",
 		description:
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, earum quas. Eos expedita minus accusamus earum, dolores recusandae repellendus voluptatibus nam consequatur suscipit magnam, sed dolorem? Sunt ad cum itaque.",
+			"Engaged in the development of a scalable website utilizing Next.js, Tailwind CSS, TypeScript, and Strapi CMS.",
 		link: "https://bharattechlabs.com/",
-		skils: ["NextJs", "NodeJs", "Strapi", "Typescript", "Tailwind CSS"],
+		skils: ["NextJs", "NodeJs", "Strapi CMS", "Typescript", "Tailwind CSS"],
 	},
 	{
 		startDate: "2023",

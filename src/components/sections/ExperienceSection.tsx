@@ -32,7 +32,10 @@ const ExperienceSection: FC = () => {
 										key={index}
 										className="text-gray-400 cursor-pointer"
 									>
-										• {skill}
+										•{" "}
+										<span className="hover:underline hover:underline-offset-4 hover:text-white">
+											{skill}
+										</span>
 									</div>
 								))}
 							</div>

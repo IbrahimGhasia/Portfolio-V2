@@ -34,6 +34,20 @@ export const project = [
 		deployedLink: "https://d-clinic.vercel.app/",
 	},
 	{
+		title: "FriendZone - Realtime Chat",
+		description:
+			"FriendZone is a real-time chat application built using Next.js 14, Tailwind CSS, and various other technologies to provide a seamless and engaging user experience for chatting with friends.",
+		tools: [
+			"NextJs",
+			"TypeScript",
+			"Pusher",
+			"Upstash - Redis",
+			"Tailwind CSS",
+		],
+		sourceCode: "https://github.com/IbrahimGhasia/friendzone",
+		deployedLink: "https://friendzone-puce.vercel.app",
+	},
+	{
 		title: "digital Hippo",
 		description:
 			"A modern E-Commerce Marketplace for digital products, leveraging Next.js 14. The project includes Admin Dashboard, user email authentication, and a clean, TypeScript-based codebase for enhanced functionality and efficiency.",
