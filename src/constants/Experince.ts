@@ -2,11 +2,11 @@ export const experience = [
 	{
 		startDate: "2024",
 		endDate: "present",
-		title: "Full-Stack Developer Intern - KeyToZ",
+		title: "Full-Stack Developer - KeyToZ",
 		description:
-			"Engaged in the development of a scalable website utilizing Next.js, Tailwind CSS, TypeScript, and Strapi CMS.",
+			"Developed dynamic websites using Next.js 14 and Strapi CMS optimizing user experience and engagement. Implemented adapter design pattern for frontend component library (Mantine UI). Participated in code reviews for junior developers. Improved website SEO score to 90% by implementing best SEO practices. Implemented authentication flow using AWS Cognito and Amplify. Developed Lambda function for pre-signup triggers",
 		link: "https://bharattechlabs.com/",
-		skils: ["NextJs", "NodeJs", "Strapi CMS", "Typescript", "Tailwind CSS"],
+		skils: ["NextJs", "Strapi CMS", "GraphQL", "AWS Cognito", "Mantine UI", "Typescript", "Tailwind CSS"],
 	},
 	{
 		startDate: "2023",
